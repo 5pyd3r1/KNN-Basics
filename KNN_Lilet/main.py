@@ -2,7 +2,7 @@ import tensorflow as tf
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-path = r"/Dataset/iris.csv"
+path = "../Dataset/iris.csv"
 data = pd.read_csv(path, delimiter=',')
 
 # Was vorhergesagt wird
