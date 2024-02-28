@@ -24,7 +24,8 @@ train_data, test_data, train_col, test_col = train_test_split(data, col, test_si
 # Modell des KNN (1. Hidden layer 32 Knoten 2. Hidden layer 64 Knoten, 3. Output layer mit 3 Knoten)
 model = tf.keras.Sequential([
     tf.keras.layers.Dense(32, activation=tf.nn.sigmoid, input_dim=11),
-    tf.keras.layers.Dense(64, activation=tf.nn.sigmoid),
+    tf.keras.layers.Dense(120, activation=tf.nn.sigmoid),
+    tf.keras.layers.Dense(120, activation=tf.nn.sigmoid),
     tf.keras.layers.Dense(11, activation=tf.nn.softmax)
 ])
 
